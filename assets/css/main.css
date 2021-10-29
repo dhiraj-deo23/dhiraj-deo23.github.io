@@ -1572,9 +1572,8 @@ body.is-preload #footer {
 
 .work-experience {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgb(10, 25, 47);
-  /* background-color: rgba(3, 12, 27, 0.952); */
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
@@ -1681,8 +1680,12 @@ body.is-preload #footer {
 }
 
 .hire.mail {
-  margin-bottom: 50px;
-  margin-left: 37%;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.5rem;
+  margin-top: 0;
 }
 
 .copy {
@@ -1839,4 +1842,151 @@ img {
 .copyright a {
   border-bottom: none;
   color: inherit;
+}
+
+@media screen and (max-width: 450px) {
+  .intro-heading h3 {
+    font-size: 10px;
+  }
+
+  .intro-heading .hire {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .intro-heading .intro-image {
+    margin-left: 1.2rem;
+  }
+
+  .intro-heading .intro-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #intro #intro-content {
+    font-size: 13px;
+  }
+
+  #intro #intro-content p {
+    margin-bottom: 13px;
+  }
+
+  #intro #intro-content .hire {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .work-place {
+    flex: 0 0 120px;
+  }
+
+  .work-description {
+    flex: 1 1 250px;
+  }
+
+  .work-place-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .work-desc-list {
+    width: 130px;
+    padding-right: 6px;
+  }
+
+  .work-experience .work-place .place {
+    padding: 2px 20px 2px 5px;
+    width: 70px;
+    font-size: 10px;
+  }
+
+  .work-points {
+    font-size: 11px;
+    padding-bottom: 8px;
+  }
+
+  .work-points::before {
+    padding-right: 5px;
+    top: 1px;
+  }
+
+  .work-duration {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .work-items {
+    display: flex;
+    width: 320px;
+  }
+
+  .work-img {
+    margin: 0;
+  }
+
+  .work-content {
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+
+  .feature {
+    font-size: 6px;
+  }
+
+  .work-content .project-name {
+    font-size: 11px;
+    text-transform: capitalize;
+    padding-left: 10px;
+  }
+
+  .descript {
+    font-size: 10px;
+    letter-spacing: 0.6px;
+  }
+
+  .project-description {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    left: -15px;
+    /* transform: translate(-25%, 0); */
+    padding: 7px;
+    width: 120px;
+    height: fit-content;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .tech-used {
+    margin-top: 0.5rem;
+    font-size: 6px;
+    margin-right: 10px;
+  }
+
+  .link-to-projects a {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  h2.major {
+    font-size: 17px;
+  }
+
+  .about-content {
+    font-size: 12px;
+  }
+
+  .skill-slides .separator {
+    font-size: 12px;
+  }
+
+  .services-block .skill-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #contact p {
+    font-size: 15px;
+    word-spacing: 1.6px;
+  }
 }
